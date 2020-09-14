@@ -1,0 +1,328 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 20% 50% 29%;
+
+        }
+        .go {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item {
+            grid-row-start: 3;
+            grid-row-end: 10;
+        }
+        body {
+            margin: 0
+        }
+        .head {
+            background-color: rgb(219, 209, 209);
+            position: relative;
+            padding: 10px 0;
+
+        }
+        .w3 {
+            display: inline-block;
+            padding-right: 10px;
+            
+        }
+        .web {
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            right: 0%;
+            bottom: 7px;
+            
+        }
+        .w3 a {
+            text-decoration: none;
+            color: black;
+            font-size: 184%;
+        }
+        /* Site Navigation */
+        .nav-site ul {
+            background-color: #35862a;
+            margin: 0%;
+
+        }
+        .nav-site li {
+            list-style: none;
+            float: left;
+            padding: 15px 10px;
+            
+        }
+        .nav-site a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 130%;
+            font-weight: normal;
+            border: 3px solid #35862a;
+            border-bottom: none;
+        }
+        .nav-site a:hover {
+            background-color:#b9d872
+        }
+
+        /* End Site Navigation */
+
+        aside {
+            float: left;
+        }
+        aside a {
+            text-decoration: none;
+            color: #000;
+            font-size: 115%;
+            letter-spacing: 1px;
+            
+        }
+        aside li {
+            list-style: none;
+        }
+    
+        aside a:hover {
+            background-color:#a8ad9d;
+        }
+        main-area {
+            /* border: 2px solid #d3dee7; */
+
+        } 
+        .yup {
+            padding: 10px 4px;
+            font-size: 115%;
+        }
+        .big {
+            font-size: 80px;
+            padding: 1px;
+            text-align: center;
+            color: rgb(59, 50, 50);
+            margin: 5px;
+        }
+        .small {
+            text-align: center;
+            font-size: 170%;
+            margin: 10px;
+        }
+        button {
+            color: white;  
+            background-color:#838f87;
+            padding: 7px;
+            cursor: pointer;
+            margin-left: 20px;
+            
+        }
+        .button {
+            color: white; 
+            background-color:#2ab95a; 
+            padding: 5px;
+            cursor: pointer;
+        }
+        pre {
+            margin: 0;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: 200;
+            text-align: center;
+        }
+        .par {
+            font-size: 22px;
+            text-align: center;
+            font-weight: 100;
+        }
+        
+        .boxa {
+            width: 500px;
+            border: 1px solid #d3dee7;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        
+        }
+
+        .group:before,
+        .group:after {
+            content: "";
+            display: table;
+        }
+        .group:after {
+            clear: both
+        }
+        .group {
+            zoom: 1;
+        }
+    </style>
+</head>
+<body class="grid-container">
+    <div class="head go">
+        <div class="w3"><a href="https//google.com/">w3school.com</a></div>
+        <div class="web">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+    </div>
+    <nav class="nav-site go">
+        <ul class="group">
+            <li><a href="#">TUTORIALS</a></li>
+            <li><a href="#">REFERENCES</a></li>
+            <li><a href="#">EXAMPLES</a></li>
+        </ul>
+    </nav>
+
+    <aside class="item">
+        <ul>
+            <li class="yup">HTML and CSS</li>
+            <li><a href="#">Learn HTML</a></li>
+            <li><a href="#">Learn CSS</a></li>
+            <li><a href="#">Learn W3.CSS</a></li>
+            <li><a href="#">Learn Colors</a></li>
+            <li><a href="#">Learn Bootstrap 3</a></li>
+            <li><a href="#">Learn Bootstrap 4</a></li>
+            <li><a href="#">Learn Icons</a></li>
+            <li><a href="#">Learn Graphics</a></li>
+            <li><a href="#">Learn How To</a></li>
+            <li class="yup">JavaScript</li>
+            <li><a href="#">Learn JavaScript</a></li>
+            <li><a href="#">Learn jQuery</a></li>
+            <li><a href="#">Learn AngularJS</a></li>
+            <li><a href="#">Learn JSON</a></li>
+            <li><a href="#">Learn AJAX</a></li>
+            <li class="yup">Sever Side</li>
+            <li><a href="#">Learn SQL</a></li>
+            <li><a href="#">Learn PHP</a></li>
+            <li><a href="#">Learn ASP</a></li>
+            <li><a href="#">Learn Node.js</a></li>
+            <li><a href="#">Learn Raspberry Pi</a></li>
+            <li class="yup">Web Building</li>
+            <li><a href="#">Web Templates</a></li>
+            <li><a href="#">Web Statistics</a></li>
+            <li><a href="#">Web Certificate</a></li>
+            <li><a href="#">Web Editor</a></li>
+            <li class="yup">XML Tutorials</li>
+            <li><a href="#">Learn XML</a></li>
+            <li><a href="#">Learn XML AJAX</a></li>
+            <li><a href="#">Learn XML DOM</a></li>
+            <li><a href="#">Learn XML DTD</a></li>
+            <li><a href="#">Learn XML Schema</a></li>
+            <li><a href="#">Learn XSLT</a></li>
+            <li><a href="#">Learn Xpath</a></li>
+            <li><a href="#">Learn XQuery</a></li>
+        </ul>
+    </aside>
+
+        <div style="text-align: center; letter-spacing: 1px;">
+            <div class="big">HTML</div>
+            <p  class="small">The language for building web pages</p>
+            <button type="button" onclick="alert('Hello world!')">LEARN HTML</button>
+            <button type="button" onclick="alert('Hello world!')">HTML REFERENCES</button>
+        </div>
+
+        <div>
+        <div class="boxa">
+            <p>HTML Example:</p>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;title&gt;HTML Tutorial&lt;/title&gt;
+&lt;body&gt;
+                    
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+                    
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre> 
+        </div> 
+            <div class="boxa">
+                <button class="button" type="button" onclick="alert('Hello world!')">Try it Yourself >></button>
+                <input style="color:white;background-color: #2ab95a; padding: 5px" type="button" value="Try it Yourself &gt;&gt;">
+            </div>
+        </div>
+
+    <div class="boxa">
+        <p>CSS Example:</p>
+        <pre>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+        </pre>
+    </div>
+
+    <div>
+        <div class="big">CSS</div>
+        <p class="small">The language for styling web pages</p>
+        <button type="button" onclick="alert('Hello world!')">LEARN CSS</button>
+        <button type="button" onclick= "alert('Hello world!')">CSS REFERENCES</button>
+    </div>
+    <div>
+        <div class="big">JavaScript</div>
+        <p class="small">The language for programming web pages</p>
+        <button type="button"  onclick= "alert('Hello world!')">LEARN JAVASCRIPT</button>
+        <button type="button"  onclick= "alert('Hello world!')">JAVASCRIPT REFERENCES</button>
+    </div>
+
+    <div class="boxa">
+        <p>JavaScript Example:</p>
+        <pre>
+button onclick="myFunction()"&gt;Click Me!&lt;/buttom&lt;
+<br>
+&lt;script&gt;
+function myFunction() {
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px";
+    x.style.color = "red";
+}
+&lt;/script&gt;
+&lt;button onclick="myFunction()"&gt;Click Me!
+&lt;/button&gt;
+        </pre>
+    </div>
+    <div>        
+        <h1>SQL</h1>
+        <p class="par">A language for accessing databases</p>
+        <button type="button"  onclick= "alert('Hello world!')">JAVASCRIPT REFERENCES</button>
+    </div>
+    <div>
+        <h1>PHP</h1>
+        <p class="par">A web server programming language</p>
+        <button type="button"  onclick= "alert('Hello world!')">JAVASCRIPT REFERENCES</button>
+    </div>
+    <div>
+        <h1>jQuery</h1>
+        <p class="par">A JavaScript library for developing web pages</p>
+        <button type="button"  onclick= "alert('Hello world!')">JAVASCRIPT REFERENCES</button>
+    </div>
+    <div>
+        <h1>W3.CSS</h1>
+        <p class="par">A modern CSS framework for faster and better responsive websites</p>
+        <button type="button"  onclick= "alert('Hello world!')">JAVASCRIPT REFERENCES</button>
+    </div>
+    <div>
+        <h1>Color Picker</h1>
+    </div>
+    <div>
+        <h1>Bootstrap</h1>
+        <p class="par">Bootstrap is a CSS framework for designing better web pages</p>
+        <button type="button"  onclick= "alert('Hello world!')">JAVASCRIPT REFERENCES</button>
+    </div>
+    <div>
+        <h1>Web Templates</h1>
+        <p class="par">Browse our collection of <em>free</em> responsive HTML Templates</p>
+    </div>
+</body>
+</html>
+
+
